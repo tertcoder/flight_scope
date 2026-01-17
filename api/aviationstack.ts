@@ -5,7 +5,7 @@
  * - Only real-time flight data (no flight search/booking)
  * - Limited to 100 requests/month on free plan
  *
- * For a production flight search engine, you'd want Amadeus or Skyscanner API
+ * For a production flight search engine, I'd want Amadeus or Skyscanner API
  * which support actual flight offers search. We'll transform real flight
  * schedule data into our flight offer format.
  */
