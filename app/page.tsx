@@ -27,13 +27,28 @@ function FlightSearchContent() {
       {/* Header */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #1565c0 0%, #0d47a1 100%)",
+          backgroundImage: "url(/bg.jpeg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "relative",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "linear-gradient(135deg, rgba(21, 101, 192, 0.85) 0%, rgba(13, 71, 161, 0.85) 100%)",
+            zIndex: 1,
+          },
           color: "white",
           py: { xs: 4, md: 6 },
           mb: { xs: 3, md: 4 },
+          zIndex: 0,
         }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ position: "relative", zIndex: 2 }}>
           <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
             <FlightTakeoff sx={{ fontSize: { xs: 32, md: 40 } }} />
             <Typography variant="h4" component="h1" sx={{ fontSize: { xs: "1.75rem", md: "2.25rem" } }}>
